@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco XYZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Banco XYZ</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>Bem-vindo ao Banco XYZ</h1>
+        <p>Seu parceiro financeiro de confiança.</p>
+        <a href="sobre.html"><button>Saiba Mais</button></a>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Nossos Serviços</h2>
+        <div class="service">
+            <h3>Conta Corrente</h3>
+            <p>Abra sua conta corrente com a gente e aproveite as vantagens.</p>
+        </div>
+        <div class="service">
+            <h3>Empréstimos</h3>
+            <p>Oferecemos empréstimos com as melhores taxas do mercado.</p>
+        </div>
+        <div class="service">
+            <h3>Investimentos</h3>
+            <p>Invista com segurança e tenha o melhor retorno.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>O Banco XYZ tem mais de 50 anos de experiência no mercado financeiro, oferecendo sempre o melhor para nossos clientes.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações.</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Banco XYZ. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

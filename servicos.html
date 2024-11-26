@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Banco XYZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Banco XYZ</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="services-section">
+        <h1>Nossos Serviços</h1>
+        <div class="service">
+            <h2>Conta Corrente</h2>
+            <p>Abra sua conta corrente com a gente e aproveite as vantagens.</p>
+        </div>
+        <div class="service">
+            <h2>Empréstimos</h2>
+            <p>Oferecemos empréstimos com as melhores taxas do mercado.</p>
+        </div>
+        <div class="service">
+            <h2>Investimentos</h2>
+            <p>Invista com segurança e tenha o melhor retorno.</p>
+        </div>
+        <div class="service">
+            <h2>Seguros</h2>
+            <p>Proteja seu patrimônio com nossos seguros personalizados.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Banco XYZ. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+</html>
